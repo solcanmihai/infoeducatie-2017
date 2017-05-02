@@ -1,11 +1,12 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 
 //Where to find the static ressources(aka html, js, css, images, etc)
-app.use(express.static('public'));
+path.resolve(__dirname, '.../public');
 
 app.get('/', function(req, res){
-	res.send('Hello world');
+	res.sendFile('welcome.html');
 })
 
 var server = app.listen(3000, function(){
