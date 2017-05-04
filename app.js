@@ -14,6 +14,10 @@ app.get('/login', function(req, res){
 	res.render('ejs/login.ejs');
 })
 
+app.post('/login', function(req, res){
+	res.send(req.body.email + req.body.password);
+})
+
 var server = app.listen(3000, function(){
 	var host = server.address().address
 	var port = server.address().port
