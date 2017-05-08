@@ -1,0 +1,60 @@
+/* header styles */
+
+*{
+	font-family: "Rockwell";
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.default-nav{
+	background: #222;
+	color: #FFF;
+	padding: 15px 30px;
+}
+
+.default-nav .logo{
+	color: #FFF;
+	text-decoration: none;
+	width: 49%;
+	display: inline-block;
+	text-align: left;
+	font-size: 25px;
+}
+
+.default-nav .logo img{
+	width: 50px;
+	border-radius: 5px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.default-nav #main-navigation {
+	width: 49%;
+	display: inline-block;
+	text-align: right;
+}
+
+.default-nav #main-navigation ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.default-nav #main-navigation ul li{
+	display: inline-block;
+}
+
+.default-nav #main-navigation ul li a{
+	text-decoration: none;
+	color: #FFF;
+	border-radius: 5px;
+	transition: 0.3s ease all;
+	padding: 10px 15px;
+}
+
+.default-nav #main-navigation ul li a:hover{
+	background: #444;
+}

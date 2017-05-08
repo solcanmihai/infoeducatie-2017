@@ -1,25 +1,67 @@
-		<% include ../partials/header.ejs %>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Welcome</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/navbar-style.css">
+		<link rel="stylesheet" href="css/footer-style.css">
+		<link rel="stylesheet" href="css/welcome.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	</head>
+	<body>
+
 		<% include ../partials/navbar.ejs %>
 
-		<link rel="stylesheet" href="css/style1.css">
-		
-		<div class="jumbotron">
-			<div class="container">
-				<h1 class="display-2">Welcome!</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<a class="btn btn-primary btn-large">Learn more..</a>
-				<a href="/login" class="btn btn-primary btn-large">Log in</a>
-				<a href="/register" class="btn btn-primary btn-large">Sign up</a>
-			</div>
-		</div>
+		<section class="welcome-message">
+			<div class="welcome-message-content">
+				<h1>Welcome!</h1>
+				<p>This is the only socialising app you will ever need!</p>
 
-		<div class="container">
-			<div>
-				<img class="img-thumbnail imgx float-left" src="http://orig11.deviantart.net/881e/f/2009/173/8/1/bioshroom_200x200_by_nintenzone.png" alt="Feautures describing image">		
-				<div>
-					<p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-				</div>
+				<a href="/dashboard">Dashboard</a>
+				<a href="/register">Register</a>
+				<a href="/login">Login</a>
 			</div>
-		</div>
-	<% include ../partials/footer.ejs %>
-	
+		</section>
+
+		<section class="features">
+			<div class="feature-left">
+				<img class="feature-img" src="https://placekitten.com/g/300/300" alt="text">
+				<div class="feature-description">
+					<h3>Lightweight</h3>
+					<span>Very fast and lightweight because it using the latest technologies, including node.js exress passport.js mongodb, and many more. It is also made without using bootstrap, increasing the performance of the website.</span>
+				</div>
+
+			</div>
+			<div class="feature-right">
+				<div class="feature-description">
+					<h3>Open source</h3>
+					<span>All the website code is hosted on github, so there is no secret spying or data colection. Each user can check out the codeand even contribute to the project if desired.</span>
+				</div>
+				<img class="feature-img" src="https://placekitten.com/g/300/300" alt="text">
+			</div>
+
+			<div class="feature-left">
+				<img class="feature-img" src="https://placekitten.com/g/300/300" alt="text">
+				<div class="feature-description">
+					<h3>Customizable</h3>
+					<span>Every user can chose it's own color scheme, each widget position, and so on</span>
+				</div>
+
+			</div>
+			<div class="feature-right">
+				<div class="feature-description">
+					<h3>Smart mirror compatible</h3>
+					<span>This website brings the ability to customize the dashboard, and then integrate it with a smart mirror. It was never easier than this. Now it is in the power of the user.</span>
+				</div>
+				<img class="feature-img" src="https://placekitten.com/g/300/300" alt="text">
+			</div>
+
+
+		</section>
+
+
+		<% include ../partials/footer.ejs %>
+
+	</body>
+</html>

@@ -1,0 +1,37 @@
+.content{
+	margin: 100px 300px;
+	background: #051938;
+	padding: 100px;
+	padding-top: 20px;
+	border-radius: 20px;	
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	font-size: 40px;
+	color: #4d658d;
+}
+
+label{
+	color: #4d658d;
+	display: block;
+	font-size: 20px;
+}
+
+input{
+	border-radius: 5px;
+	margin: 10px;
+	font-size: 20px;
+	padding: 5px;
+}
+
+button{
+	display: block;
+	text-align: center;
+	margin: 10px auto;
+	font-size: 18px;
+	color: #051938;
+	border-radius: 7px;
+	padding: 5px 20px;
+}

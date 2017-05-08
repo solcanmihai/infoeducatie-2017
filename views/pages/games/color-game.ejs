@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+		<link rel="stylesheet" href="../css/navbar-style.css">
+		<link rel="stylesheet" href="../css/footer-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/color-game.css">
+</head>
+<body>
+			
+		<% include ../../partials/navbar.ejs %>	
+
+		<section class="main-game">
+			<h1>The Great <br><span id="colorDisplay">RGB</span><br> Color Game</h1>
+
+			<div id="stripe">
+				<button id="reset">New Colors</button>
+				<span id="message"></span>
+				<button id="easyBtn">Easy</button>
+				<button id="hardBtn" class="selected">Hard</button>
+			</div>
+
+			<div id="container">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+
+		</section>
+
+
+		<% include ../../partials/footer.ejs %>
+		<script type="text/javascript" src="../js/color-game.js"></script>
+</body>
+</html>

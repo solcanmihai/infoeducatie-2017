@@ -1,0 +1,13 @@
+.default-footer{
+	background-color: #222;
+	color: #777;
+	padding: 30px;
+	text-align: center;
+}
+
+.default-footer img{
+	width: 50px;
+	border-radius: 8px;
+	display: block;
+	margin: 0 auto 10px;
+}
